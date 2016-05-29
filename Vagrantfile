@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.guest = :freebsd
   config.vm.synced_folder ".", "/vagrant", id: "vagrant-root", disabled: true
-  config.vm.box = "freebsd/FreeBSD-12.2-STABLE"
+  config.vm.box = "freebsd/FreeBSD-10.2-STABLE"
   config.ssh.shell = "sh"
   config.vm.base_mac = "080027D14C66"
 
